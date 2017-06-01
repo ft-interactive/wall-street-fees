@@ -12,8 +12,6 @@ export default async () => {
      return data;
   });
 
-console.log(data)
-
   /*
   An experimental demo that gets content from the API
   and overwrites some model values. This requires the Link File

@@ -14,8 +14,7 @@ export default () => ({ // eslint-disable-line
   headline: 'TK hed goes here',
 
   // summary === standfirst (Summary is what the content API calls it)
-  summary: 'TK standfirst goes here ' +
-           'second line for mobile goes here',
+  summary: 'TK standfirst goes here',
 
   topic: {
     name: 'Starter Kit',

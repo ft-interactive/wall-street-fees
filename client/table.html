@@ -29,11 +29,11 @@
           <td class="volume" data-o-table-order="{{row.volume|replace(',','')}}">{{row.volume}}</td>
           <td class="deals table__exclude-mobile">{{row.deals}}</td>
           <td class="average_deal_size" data-o-table-order="{{row.avedealsize|replace(',','')}}">{{row.avedealsize}}</td>
-          <td class="band_one table__exclude-mobile">{{row.bandone}}</td>
-          <td class="band_two table__exclude-mobile">{{row.bandtwo}}</td>
-          <td class="band_three table__exclude-mobile">{{row.bandthree}}</td>
-          <td class="band_four table__exclude-mobile">{{row.bandfour}}</td>
-          <td class="band_five table__exclude-mobile">{{row.bandfive}}</td>
+          <td class="band_one table__exclude-mobile" data-o-table-order="{{ '0' if row.bandone == '0.00' else row.bandone * 100 }}">{{ '' if row.bandone == '0.00' else row.bandone }}</td>
+          <td class="band_two table__exclude-mobile" data-o-table-order="{{ '0' if row.bandtwo == '0.00' else row.bandtwo * 100 }}">{{ '' if row.bandtwo == '0.00' else row.bandtwo }}</td>
+          <td class="band_three table__exclude-mobile" data-o-table-order="{{ '0' if row.bandthree == '0.00' else row.bandthree * 100 }}">{{ '' if row.bandthree == '0.00' else row.bandthree }}</td>
+          <td class="band_four table__exclude-mobile" data-o-table-order="{{ '0' if row.bandfour == '0.00' else row.bandfour * 100 }}">{{ '' if row.bandfour == '0.00' else row.bandfour }}</td>
+          <td class="band_five table__exclude-mobile" data-o-table-order="{{ '0' if row.bandfive == '0.00' else row.bandfive * 100 }}">{{ '' if row.bandfive == '0.00' else row.bandfive }}</td>
         </tr>
         {% endfor %}
       </tbody>
