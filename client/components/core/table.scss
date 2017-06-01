@@ -1,6 +1,9 @@
 @import 'o-grid/main';
 
 #table_fees {
+
+    margin-top: 20px;
+
     th[aria-sort="descending"]:after {
         content: "▾";
         margin-left: 5px;
