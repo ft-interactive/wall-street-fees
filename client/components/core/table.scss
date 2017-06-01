@@ -1,0 +1,21 @@
+@import 'o-grid/main';
+
+#table_fees {
+    th[aria-sort="descending"]:after {
+        content: "▼";
+        margin-left: 5px;
+    }
+
+    th[aria-sort="ascending"]:after {
+        content: "▲";
+        margin-left: 5px;
+    }
+
+    @include oGridRespondTo($until: L) {
+        .table__exclude-mobile {
+            display: none;
+        }
+    }
+}
+
+

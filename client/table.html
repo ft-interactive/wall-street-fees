@@ -1,0 +1,45 @@
+<!-- TABLE -->
+  <div class="o-grid-container">
+    <div class="o-grid-row">
+      <div data-o-grid-colspan="6 L12" class="first-column">
+        <h2>TK test by firm</h2>
+        <div>Click on the column headers to sort.</div>
+    <table class="o-table" id="table_fees" data-o-component="o-table">
+      <thead>
+        <th class="o-table__cell--numeric" data-o-table-data-type="numeric">Ranking</th>
+        <th>Firm</th>
+        <th class="o-table__cell--numeric" data-o-table-data-type="numeric">Market share</th>
+        <th class="o-table__cell--numeric" data-o-table-data-type="numeric">Total revenue ($bn)</th>
+        <th >Volume ($bn)</th>
+        <th class="table__exclude-mobile o-table__cell--numeric" data-o-table-data-type="numeric">Number of deals</th>
+        <th class="o-table__cell--numeric" data-o-table-data-type="numeric">Average deal size</th>
+        <th class="table__exclude-mobile o-table__cell--numeric" data-o-table-data-type="numeric">$0.5bn-$1bn</th>
+        <th class="table__exclude-mobile o-table__cell--numeric" data-o-table-data-type="numeric"">$1bn-$5bn</th>
+        <th class="table__exclude-mobile o-table__cell--numeric" data-o-table-data-type="numeric">$5bn-$10bn</th>
+        <th class="table__exclude-mobile o-table__cell--numeric" data-o-table-data-type="numeric">$10bn-$25bn</th>
+        <th class="table__exclude-mobile o-table__cell--numeric" data-o-table-data-type="numeric">$25bn and above</th>
+      </thead>
+      <tbody>
+        {% for row in data.table %}
+        <tr>
+          <td class="ranking">{{row.ranking}}</td>
+          <td class="firm">{{row.firm}}</td>
+          <td class="market_share">{{row.marketshare}}</td>
+          <td class="total_revenue">{{row.totalrevenue}}</td>
+          <td class="volume">{{row.volume}}</td>
+          <td class="deals table__exclude-mobile">{{row.deals}}</td>
+          <td class="average_deal_size">{{row.avedealsize}}</td>
+          <td class="band_one table__exclude-mobile">{{row.bandone}}</td>
+          <td class="band_two table__exclude-mobile">{{row.bandtwo}}</td>
+          <td class="band_three table__exclude-mobile">{{row.bandthree}}</td>
+          <td class="band_four table__exclude-mobile">{{row.bandfour}}</td>
+          <td class="band_five table__exclude-mobile">{{row.bandfive}}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+      </div>
+    </div>
+  </div>
+
+<!-- END TABLE -->

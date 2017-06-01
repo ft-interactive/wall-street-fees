@@ -1,11 +1,19 @@
 import article from './article';
 import getFlags from './flags';
 import getOnwardJourney from './onward-journey';
+import * as bertha from 'bertha-client';
 
 export default async () => {
   const d = await article();
   const flags = await getFlags();
   const onwardJourney = await getOnwardJourney();
+
+  const data = await bertha.get('1nnLEYgAYHc6uOf8VtKJ-Xpok7Xx-m62aETT1sURYrw8', ['table','body|object','metadata|object'], { republish:true }).then((data) => {
+     return data;
+  });
+
+console.log(data)
+
   /*
   An experimental demo that gets content from the API
   and overwrites some model values. This requires the Link File
@@ -32,5 +40,6 @@ export default async () => {
     ...d,
     flags,
     onwardJourney,
+    data,
   };
 };
