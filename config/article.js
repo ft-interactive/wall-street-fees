@@ -39,8 +39,8 @@ export default () => ({ // eslint-disable-line
   // Byline can by a plain string, markdown, or array of authors
   // if array of authors, url is optional
   byline: [
-    { name: 'Author One', url: '/foo/bar' },
-    { name: 'Author Two' },
+    { name: 'Sujeet Indap', url: '/foo/bar' },
+    // { name: 'Author Two' },
   ],
 
   // Appears in the HTML <title>
