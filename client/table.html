@@ -3,7 +3,7 @@
     <div class="o-grid-row">
       <div data-o-grid-colspan="6 L12" class="first-column">
         <h2>Wall Street M&A fee rankings</h2>
-        <div>Click on column headers to sort the data.</div>
+        <div>Click column headers to sort data.</div>
     <table class="o-table" id="table_fees" data-o-component="o-table">
       <thead>
         <th class="o-table__cell--numeric" data-o-table-data-type="numeric">Ranking</th>
@@ -25,10 +25,10 @@
           <td class="ranking">{{row.ranking}}</td>
           <td class="firm">{{row.firm}}</td>
           <td class="market_share">{{row.marketshare}}</td>
-          <td class="total_revenue">{{row.totalrevenue}}</td>
-          <td class="volume">{{row.volume}}</td>
+          <td class="total_revenue"  data-o-table-order="{{row.totalrevenue|replace(',','')}}">{{row.totalrevenue}}</td>
+          <td class="volume" data-o-table-order="{{row.volume|replace(',','')}}">{{row.volume}}</td>
           <td class="deals table__exclude-mobile">{{row.deals}}</td>
-          <td class="average_deal_size">{{row.avedealsize}}</td>
+          <td class="average_deal_size" data-o-table-order="{{row.avedealsize|replace(',','')}}">{{row.avedealsize}}</td>
           <td class="band_one table__exclude-mobile">{{row.bandone}}</td>
           <td class="band_two table__exclude-mobile">{{row.bandtwo}}</td>
           <td class="band_three table__exclude-mobile">{{row.bandthree}}</td>
