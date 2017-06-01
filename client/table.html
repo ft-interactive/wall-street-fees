@@ -2,22 +2,22 @@
   <div class="o-grid-container">
     <div class="o-grid-row">
       <div data-o-grid-colspan="6 L12" class="first-column">
-        <h2>TK test by firm</h2>
-        <div>Click on the column headers to sort.</div>
+        <h2>Wall Street M&A fee rankings</h2>
+        <div>Click on column headers to sort the data.</div>
     <table class="o-table" id="table_fees" data-o-component="o-table">
       <thead>
         <th class="o-table__cell--numeric" data-o-table-data-type="numeric">Ranking</th>
         <th>Firm</th>
-        <th class="o-table__cell--numeric" data-o-table-data-type="numeric">Market share</th>
+        <th class="o-table__cell--numeric" data-o-table-data-type="numeric">Market share (%)</th>
         <th class="o-table__cell--numeric" data-o-table-data-type="numeric">Total revenue ($bn)</th>
         <th >Volume ($bn)</th>
-        <th class="table__exclude-mobile o-table__cell--numeric" data-o-table-data-type="numeric">Number of deals</th>
-        <th class="o-table__cell--numeric" data-o-table-data-type="numeric">Average deal size</th>
-        <th class="table__exclude-mobile o-table__cell--numeric" data-o-table-data-type="numeric">$0.5bn-$1bn</th>
+        <th class="table__exclude-mobile o-table__cell--numeric" data-o-table-data-type="numeric">Deals</th>
+        <th class="o-table__cell--numeric" data-o-table-data-type="numeric">Ave deal size ($bn)</th>
+        <th class="table__exclude-mobile o-table__cell--numeric" data-o-table-data-type="numeric">$5m-$1bn</th>
         <th class="table__exclude-mobile o-table__cell--numeric" data-o-table-data-type="numeric"">$1bn-$5bn</th>
         <th class="table__exclude-mobile o-table__cell--numeric" data-o-table-data-type="numeric">$5bn-$10bn</th>
         <th class="table__exclude-mobile o-table__cell--numeric" data-o-table-data-type="numeric">$10bn-$25bn</th>
-        <th class="table__exclude-mobile o-table__cell--numeric" data-o-table-data-type="numeric">$25bn and above</th>
+        <th class="table__exclude-mobile o-table__cell--numeric" data-o-table-data-type="numeric">$25bn and over</th>
       </thead>
       <tbody>
         {% for row in data.table %}

@@ -2,12 +2,13 @@
 
 #table_fees {
     th[aria-sort="descending"]:after {
-        content: "▼";
+        content: "▾";
         margin-left: 5px;
     }
 
     th[aria-sort="ascending"]:after {
-        content: "▲";
+        content: "▴";
+        // transform: rotate(180deg);
         margin-left: 5px;
     }
 
@@ -16,6 +17,24 @@
             display: none;
         }
     }
+
+    th {
+        color:#00757F;
+        border-bottom: #CCC1B7 solid 1px;
+        line-height: 18px;
+        vertical-align: top;
+    }
+
+    th:hover {
+        text-decoration: underline;
+    }
+
+    tr {
+        border-bottom: #CCC1B7 solid 1px;
+    }
+
+    th.o-table__cell--numeric {
+        text-align: left;
+    }
+
 }
-
-
