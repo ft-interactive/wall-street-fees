@@ -17,7 +17,7 @@ export default () => ({ // eslint-disable-line
   summary: 'TK standfirst goes here',
 
   topic: {
-    name: 'Starter Kit',
+    name: 'Mergers & Acquisitions',
     url: '/foo',
   },
 
