@@ -22,7 +22,7 @@ export default () => ({ // eslint-disable-line
   },
 
   // relatedArticle: {
-  //   text: '',
+    text: 'Related article >',
   //   url: '',
   // },
 
