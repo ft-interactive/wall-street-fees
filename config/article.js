@@ -76,8 +76,8 @@ export default () => ({ // eslint-disable-line
 
   //TWITTER METADATA (for Twitter cards)
   twitterImage: 'https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fig.ft.com%2Fsites%2Fwall-street-fees%2Fimages%2Fwall-street-fees-SOCIAL.jpg?source=ig&format=png',
-  twitterHeadline: 'Where are Wall Street\'s biggest rainmakers? An FT analysis of deal fees among elite deal advisors',
-  twitterDescription: '',
+  twitterHeadline: 'Where are Wall Street\'s biggest rainmakers?',
+  twitterDescription: 'An FT analysis of deal fees among elite deal advisors',
 
   //FACEBOOK
   facebookImage: 'https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fig.ft.com%2Fsites%2Fwall-street-fees%2Fimages%2Fwall-street-fees-SOCIAL.jpg?source=ig&format=png',
