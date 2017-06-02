@@ -6,12 +6,12 @@
 
     th[aria-sort="descending"]:after {
         content: "▾";
+        // background-image: url('https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:{arrow-down}?source={your-source-here}');
         margin-left: 5px;
     }
 
     th[aria-sort="ascending"]:after {
         content: "▴";
-        // transform: rotate(180deg);
         margin-left: 5px;
     }
 
