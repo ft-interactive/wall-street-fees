@@ -1,15 +1,15 @@
 export default () => ({ // eslint-disable-line
 
   // link file UUID
-  id: '$uuid',
+  id: '44812f2e-47c0-11e7-8519-9f94ee97d996',
 
   // canonical URL of the published page
   // "$url" get filled in by the ./configure script
-  url: '$url',
+  url: 'https://ig.ft.com/wall-street-fees/',
 
   // To set an exact publish date do this:
   //       new Date('2016-05-17T17:11:22Z')
-  publishedDate: new Date(),
+  publishedDate: new Date('2017-06-05T05:00:00Z'),
 
   headline: 'Goldman dominates the league table that matters: deal fees',
 
@@ -18,18 +18,18 @@ export default () => ({ // eslint-disable-line
 
   topic: {
     name: 'Mergers & Acquisitions',
-    url: '/foo',
+    url: 'https://www.ft.com/mergers-acquisitions',
   },
 
   // relatedArticle: {
-    text: 'Related article >',
+  // text: 'Related article >',
   //   url: '',
   // },
 
   mainImage: {
     title: '',
     description: '',
-    credit: '',
+    credit: 'Getty; FT composite',
     url: 'https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fig.ft.com%2Fstatic%2Fwall-street-fees%2Fwall-street-fees-MASTER.jpg?source=ig&format=png',
     width: 2048, // ensure correct width
     height: 1152, // ensure correct height
@@ -38,7 +38,7 @@ export default () => ({ // eslint-disable-line
   // Byline can by a plain string, markdown, or array of authors
   // if array of authors, url is optional
   byline: [
-    { name: 'Sujeet Indap', url: '/foo/bar' },
+    { name: 'Sujeet Indap', url: 'https://www.ft.com/stream/b9227d2a-e25b-3dd4-87d4-6ac8d3e883fc' },
     // { name: 'Author Two' },
   ],
 
@@ -69,7 +69,7 @@ export default () => ({ // eslint-disable-line
 
   // TWEET BUTTON CUSTOM TEXT
   // tweetText: '',
-  // twitterRelatedAccounts: ['authors_account_here', 'ftdata'], // Twitter lists these as suggested accounts to follow after a user tweets (do not include @)
+  twitterRelatedAccounts: ['FTLex','sindap','manib0g','ftdata'], // Twitter lists these as suggested accounts to follow after a user tweets (do not include @)
 
   // Fill out the Facebook/Twitter metadata sections below if you want to
   // override the "General social" options above
