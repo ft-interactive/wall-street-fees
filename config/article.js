@@ -43,10 +43,10 @@ export default () => ({ // eslint-disable-line
   ],
 
   // Appears in the HTML <title>
-  title: '',
+  title: 'Goldman dominates the league table that matters: deal fees',
 
   // meta data
-  description: '',
+  description: 'Bulge bracket banks have lots of ground to make up but boutiques stand in their way',
 
   /*
   TODO: Select Twitter card type -
