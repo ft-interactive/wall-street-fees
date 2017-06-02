@@ -11,20 +11,20 @@ export default () => ({ // eslint-disable-line
   //       new Date('2016-05-17T17:11:22Z')
   publishedDate: new Date(),
 
-  headline: 'TK hed goes here',
+  headline: 'Goldman dominates the league table that matters: deal fees',
 
   // summary === standfirst (Summary is what the content API calls it)
-  summary: 'TK standfirst goes here',
+  summary: 'Bulge bracket banks have lots of ground to make up but boutiques stand in their way',
 
   topic: {
     name: 'Mergers & Acquisitions',
     url: '/foo',
   },
 
-  relatedArticle: {
-    text: 'Related article »',
-    url: 'https://en.wikipedia.org/wiki/Politics_and_the_English_Language',
-  },
+  // relatedArticle: {
+  //   text: '',
+  //   url: '',
+  // },
 
   mainImage: {
     title: '',
@@ -38,7 +38,7 @@ export default () => ({ // eslint-disable-line
   // Byline can by a plain string, markdown, or array of authors
   // if array of authors, url is optional
   byline: [
-    { name: 'Sujeet Indap', url: '/foo/bar' },
+    { name: 'Sujeet Indap in New York', url: '/foo/bar' },
     // { name: 'Author Two' },
   ],
 
@@ -74,15 +74,15 @@ export default () => ({ // eslint-disable-line
   // Fill out the Facebook/Twitter metadata sections below if you want to
   // override the "General social" options above
 
-  // TWITTER METADATA (for Twitter cards)
-  // twitterImage: '',
-  // twitterHeadline: '',
-  // twitterDescription: '',
+  //TWITTER METADATA (for Twitter cards)
+  twitterImage: 'https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fig.ft.com%2Fsites%2Fwall-street-fees%2Fimages%2Fwall-street-fees-SOCIAL.jpg?source=ig&format=png',
+  twitterHeadline: 'Where are Wall Street\'s biggest rainmakers? An FT analysis of deal fees among elite deal advisors',
+  twitterDescription: '',
 
-  // FACEBOOK
-  // facebookImage: '',
-  // facebookHeadline: '',
-  // facebookDescription: '',
+  //FACEBOOK
+  facebookImage: 'https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fig.ft.com%2Fsites%2Fwall-street-fees%2Fimages%2Fwall-street-fees-SOCIAL.jpg?source=ig&format=png',
+  facebookHeadline: 'Where are Wall Street\'s biggest rainmakers?',
+  facebookDescription: 'An FT analysis of deal fees among elite deal advisors',
 
   //ADVERTISING
   ads: {
