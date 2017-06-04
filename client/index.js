@@ -1,19 +1,19 @@
-/*
-  TODO: delete this comment
+import gaSendEvent from './components/core/ga-analytics';
 
-  This file is where you bootstrap your JS code
-  For example import stuff here:
+let lastSortDirection = 'descending';
+let direction = '';
+const columnHeaders = document.querySelectorAll('#table_fees th');
+Array.from(columnHeaders).forEach((element) => {
+  element.addEventListener('click', () => {
+    direction = element.getAttribute('aria-sort');
+    if (!direction || direction === 'none') {
+      direction = (lastSortDirection === 'descending' ? 'ascending' : 'descending');
+    } else {
+      direction = (direction === 'descending' ? 'ascending' : 'descending');
+    }
+    const columnName = element.innerText;
 
-  import {select} from 'd3-selection';
-  import myComponent from './components/my-component';
-
-  Split logical parts of you project into components e.g.
-
-  /client
-    - /components
-        - /component-name
-            - styles.scss
-            - index.js
-            - template.html
-
-*/
+    gaSendEvent('tableSort', direction, columnName);
+    lastSortDirection = direction;
+  });
+});
