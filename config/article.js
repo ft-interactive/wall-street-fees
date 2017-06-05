@@ -11,7 +11,7 @@ export default () => ({ // eslint-disable-line
   //       new Date('2016-05-17T17:11:22Z')
   publishedDate: new Date('2017-06-05T05:00:00Z'),
 
-  headline: 'Goldman dominates the league table that matters: deal fees',
+  headline: 'Goldman Sachs dominates the league table that matters: deal fees',
 
   // summary === standfirst (Summary is what the content API calls it)
   summary: 'Bulge bracket banks have lots of ground to make up but boutiques stand in their way',
@@ -43,7 +43,7 @@ export default () => ({ // eslint-disable-line
   ],
 
   // Appears in the HTML <title>
-  title: 'Goldman dominates the league table that matters: deal fees',
+  title: 'Goldman Sachs dominates the league table that matters: deal fees',
 
   // meta data
   description: 'Bulge bracket banks have lots of ground to make up but boutiques stand in their way',
