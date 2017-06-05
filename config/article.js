@@ -21,10 +21,10 @@ export default () => ({ // eslint-disable-line
     url: 'https://www.ft.com/mergers-acquisitions',
   },
 
-  // relatedArticle: {
-  // text: 'Related article >',
-  //   url: '',
-  // },
+  relatedArticle: {
+  text: 'Related article >',
+  url: 'https://www.ft.com/content/77dfbabe-471d-11e7-8519-9f94ee97d996',
+  },
 
   mainImage: {
     title: '',
