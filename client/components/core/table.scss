@@ -39,7 +39,11 @@
     }
 
     th.o-table__cell--numeric {
-        text-align: left;
+        text-align: right;
+    }
+
+    td {
+      text-align: right;
     }
 
     td.table_colspan {
@@ -47,6 +51,14 @@
       font-weight: 600;
       color: #4D4845;
       border-bottom: #4D4845 solid 2px;
+    }
+
+    td.ranking {
+      text-align: left;
+    }
+
+    td.firm {
+      text-align: left;
     }
 
 }
